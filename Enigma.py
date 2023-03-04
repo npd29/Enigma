@@ -10,6 +10,9 @@ import time
 # get input from user
 def main():
     print("\n\t-----Welcome to Enigma-----\n")
+    run()
+    
+def run():
     plugboard = input("Enter the plugboard settings (Format: WX YZ): ")
     ringSettings = input("Enter the ring setting (3 letters): ")
     plaintext = input("Enter the sentence to encode or decode: ")
@@ -41,6 +44,11 @@ def morse(answer, outcome):
             message.append(morse_dict[outcome[i]])
         message = ''.join(message)
         print(message)
+        print("----------NEW QUERY----------")
+        run()
+    else:
+        print("----------NEW QUERY----------")
+        run()
 
 
 # rotating the rotors to the correct starting place
