@@ -1,7 +1,7 @@
 '''
 Noel Desmarais
 CS 021D
-A program that creates a dictionary from a string of characters for Enigma code
+A helper function that formats a string of characters into a list to be used in the final program
 '''
 
 _string = input("Enter list: ")
